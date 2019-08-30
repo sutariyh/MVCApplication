@@ -1,0 +1,42 @@
+﻿@model S2G6_PVFAPP.Models.Order_Line
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order_Line</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.orderQuantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.orderQuantity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Order.customerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Order.customerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.productDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.productDescription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.orderlineID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

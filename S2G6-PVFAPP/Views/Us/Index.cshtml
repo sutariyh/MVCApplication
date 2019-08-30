@@ -1,0 +1,45 @@
+﻿@model IEnumerable<S2G6_PVFAPP.Models.Us>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GoesIntoQuantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Product.productDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Raw_Material.materialName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoesIntoQuantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Product.productDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Raw_Material.materialName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.usesID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.usesID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.usesID })
+        </td>
+    </tr>
+}
+
+</table>

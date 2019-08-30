@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28902.138
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S2G6-PVFAPP", "S2G6-PVFAPP\S2G6-PVFAPP.csproj", "{468E92B1-AEAD-40A2-8448-ACB6F9F7FFC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{468E92B1-AEAD-40A2-8448-ACB6F9F7FFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{468E92B1-AEAD-40A2-8448-ACB6F9F7FFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{468E92B1-AEAD-40A2-8448-ACB6F9F7FFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{468E92B1-AEAD-40A2-8448-ACB6F9F7FFC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97D295CE-6C69-41A6-8200-AAE1A7BC03BC}
+	EndGlobalSection
+EndGlobal

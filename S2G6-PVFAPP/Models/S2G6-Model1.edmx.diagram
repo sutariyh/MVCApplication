@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ee52f26efbb0406dbe43f525933ca354" Name="Diagram1">
+        <EntityTypeShape EntityType="Model.Customer" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Does_Business_In" Width="1.5" PointX="10" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Employee" Width="1.5" PointX="7.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Has_Skill" Width="1.5" PointX="10" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Order" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Order_Line" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Produced_In" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Product" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Product_Line" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Raw_Material" Width="1.5" PointX="3" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Salesperson" Width="1.5" PointX="10" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Skill" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Supply" Width="1.5" PointX="5.25" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Territory" Width="1.5" PointX="7.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Us" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Vendor" Width="1.5" PointX="3" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Work_Center" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model.Works_In" Width="1.5" PointX="10" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Model.FK_DoesBusinessIn_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Order_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_DoesBusinessIn_Territory" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Employee_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Has_Skill_Employee1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Works_In_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Has_Skill_Skill1" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Order_Line_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Order_Line_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Produced_In_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Produced_In_Work_Center" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Product_Product_Line" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Uses_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Supplies_Raw_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Uses_Raw_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_SALESPERSON_Territory" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Supplies_Vendor" ManuallyRouted="false" />
+        <AssociationConnector Association="Model.FK_Works_In_Work_Center" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

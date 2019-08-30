@@ -1,0 +1,40 @@
+﻿@model S2G6_PVFAPP.Models.Produced_In
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Produced_In</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Product.productDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Product.productDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Work_Center.workcenterLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Work_Center.workcenterLocation)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
